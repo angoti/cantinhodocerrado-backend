@@ -1,0 +1,73 @@
+### Criar um novo parque
+POST http://localhost:8080/parques
+Content-Type: application/json
+
+{
+        "nome": "Parque do Sabiá",
+        "localizacao": {
+            "latitude": -18.918202,
+            "longitude": -48.275520
+        },
+        "estadoConservacao": "BOM",
+        "tamanhoArea": 180.0,
+        "horarioVisitacao": null,
+        "atrativosTuristicos": null,
+        "educacaoAmbiental": true,
+        "dificuldadeTrilhas": "NÃO POSSUI",
+        "banheiros": true,
+        "bebedouro": true,
+        "acessibilidade": null,
+        "estacionamento": true,
+        "contato": "3432224055",
+        "redesSociais": "Não possui",
+        "referenciasInformacoes": null,
+        "fotos": ["https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20240725-WA0082.jpg?alt=media&token=a1f5e4da-0ea2-4284-a610-46f594cd42e0"]
+    }
+
+### Listar todos os parques
+GET http://localhost:8080/parques
+
+### Obter um parque por ID
+GET http://localhost:8080/parques/1
+
+### Atualizar um parque existente
+PUT http://localhost:8080/parques/1
+Content-Type: application/json
+
+{
+    "nome": "Parque do Sabiá Atualizado",
+    "localizacao": {
+        "latitude": -18.918202,
+        "longitude": -48.275520
+    },
+    "estadoConservacao": "BOM",
+    "tamanhoArea": 150.5,
+    "horarioVisitacao": {
+        "horarioPorDia": {
+            "Segunda-feira": "07:00-19:00",
+            "Terça-feira": "07:00-19:00",
+            "Quarta-feira": "07:00-19:00",
+            "Quinta-feira": "07:00-19:00",
+            "Sexta-feira": "07:00-19:00",
+            "Sábado": "07:00-19:00",
+            "Domingo": "07:00-19:00"
+        }
+    },
+    "atrativosTuristicos": "Lago, trilhas, área de lazer e playground",
+    "educacaoAmbiental": true,
+    "dificuldadeTrilhas": "DIFICIL",
+    "banheiros": true,
+    "bebedouro": true,
+    "acessibilidade": "Completa",
+    "estacionamento": true,
+    "contato": "(34) 8765-4321",
+    "redesSociais": "@parquedosabia",
+    "referenciasInformacoes": "Informações atualizadas da Prefeitura",
+    "fotos": [
+        "https://storage.firebase.com/parquesabia/foto1_atualizada.jpg",
+        "https://storage.firebase.com/parquesabia/foto2_atualizada.jpg"
+    ]
+}
+
+### Deletar um parque por ID
+DELETE http://localhost:8080/parques/2
