@@ -1,5 +1,5 @@
 ### Criar um novo parque
-POST http://localhost:8080/parques
+POST https://cantinhodocerrado-backend-4a23f7315303.herokuapp.com/parques
 Content-Type: application/json
 
 {
@@ -25,13 +25,13 @@ Content-Type: application/json
     }
 
 ### Listar todos os parques
-GET http://localhost:8080/parques
+GET https://cantinhodocerrado-backend-4a23f7315303.herokuapp.com/parques
 
 ### Obter um parque por ID
-GET http://localhost:8080/parques/1
+GET https://cantinhodocerrado-backend-4a23f7315303.herokuapp.com/parques/1
 
 ### Atualizar um parque existente
-PUT http://localhost:8080/parques/1
+PUT https://cantinhodocerrado-backend-4a23f7315303.herokuapp.com/parques/1
 Content-Type: application/json
 
 {
@@ -70,4 +70,4 @@ Content-Type: application/json
 }
 
 ### Deletar um parque por ID
-DELETE http://localhost:8080/parques/2
+DELETE https://cantinhodocerrado-backend-4a23f7315303.herokuapp.com/parques/2
