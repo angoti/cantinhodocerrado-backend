@@ -3,26 +3,37 @@ POST https://cantinhodocerrado-backend-4a23f7315303.herokuapp.com/parques
 Content-Type: application/json
 
 {
-        "nome": "Parque do Sabiá",
+        "nome": "Parque Gávea",
         "localizacao": {
-            "latitude": -18.918202,
-            "longitude": -48.275520
+            "latitude": -18.923901,
+            "longitude": -48.276769
         },
         "estadoConservacao": "BOM",
-        "tamanhoArea": 180.0,
-        "horarioVisitacao": null,
-        "atrativosTuristicos": null,
-        "educacaoAmbiental": true,
-        "dificuldadeTrilhas": "NÃO POSSUI",
+        "tamanhoArea": 18.2,
+        "horarioVisitacao": {
+            "horarioPorDia": {
+                "Terça-feira": "07:00-18:00",
+                "Quarta-feira": "07:00-18:00",
+                "Quinta-feira": "07:00-18:00",
+                "Sexta-feira": "07:00-18:00",
+                "Sábado": "07:00-18:00",
+                "Domingo": "07:00-18:00"
+            }
+        },
+        "atrativosTuristicos": "Playground, planetário, gramados, trilhas",
+        "educacaoAmbiental": null,
+        "dificuldadeTrilhas": "BAIXO",
         "banheiros": true,
         "bebedouro": true,
-        "acessibilidade": null,
+        "acessibilidade": "Sim",
         "estacionamento": true,
-        "contato": "3432224055",
-        "redesSociais": "Não possui",
-        "referenciasInformacoes": null,
-        "fotos": ["https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20240725-WA0082.jpg?alt=media&token=a1f5e4da-0ea2-4284-a610-46f594cd42e0"]
+        "contato": null,
+        "redesSociais": "@parquegavea",
+        "referenciasInformacoes": "Parque Gávea",
+        "fotos": []
     }
+    
+
 
 ### Listar todos os parques
 GET https://cantinhodocerrado-backend-4a23f7315303.herokuapp.com/parques
@@ -35,7 +46,7 @@ PUT https://cantinhodocerrado-backend-4a23f7315303.herokuapp.com/parques/1
 Content-Type: application/json
 
 {
-    "nome": "Parque do Sabiá Atualizado",
+    "nome": "Parque do Sabiá",
     "localizacao": {
         "latitude": -18.918202,
         "longitude": -48.275520
@@ -64,9 +75,14 @@ Content-Type: application/json
     "redesSociais": "@parquedosabia",
     "referenciasInformacoes": "Informações atualizadas da Prefeitura",
     "fotos": [
-        "https://storage.firebase.com/parquesabia/foto1_atualizada.jpg",
-        "https://storage.firebase.com/parquesabia/foto2_atualizada.jpg"
-    ]
+"https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG_20240724_142126.jpg?alt=media&token=3b7d3e0e-8a39-4283-aebd-d042f92a0250",
+"https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG_20240724_120631.jpg?alt=media&token=2edbd124-039c-4cbc-9362-bbee98f4118a",
+"https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20240725-WA0082.jpg?alt=media&token=a1f5e4da-0ea2-4284-a610-46f594cd42e0",
+"https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20240725-WA0072.jpg?alt=media&token=2bcb5e49-d4ab-4fcf-8855-207a0aa6724f",
+"https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20240725-WA0059.jpg?alt=media&token=3bf24876-b8fc-43a9-b05a-3e15d8f8baa1",
+"https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20240725-WA0044.jpg?alt=media&token=570ccf7e-09e1-41d4-90c5-b080ae1e2239",
+"https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG_20240724_125653.jpg?alt=media&token=2a2ccaaa-105e-4a07-bf23-b808dc983fa9"
+   ]
 }
 
 ### Deletar um parque por ID

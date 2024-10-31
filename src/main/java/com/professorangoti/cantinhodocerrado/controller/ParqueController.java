@@ -41,37 +41,72 @@ public class ParqueController {
 	}
 
 	@PutMapping("/{id}")
-	public ResponseEntity<Parque> updateParque(@PathVariable Long id, @RequestBody Parque parqueDetails) {
+	public ResponseEntity<Parque> updateParque(@PathVariable Long id, @RequestBody Parque p) {
 		return parqueRepository.findById(id)
 				.map(parque -> {
-					parque.setNome(parqueDetails.getNome());
-					parque.setLocalizacao(parqueDetails.getLocalizacao());
-					parque.setEstadoConservacao(parqueDetails.getEstadoConservacao());
-					parque.setTamanhoArea(parqueDetails.getTamanhoArea());
-					parque.setHorarioVisitacao(parqueDetails.getHorarioVisitacao());
-					parque.setAtrativosTuristicos(parqueDetails.getAtrativosTuristicos());
-					parque.setEducacaoAmbiental(parqueDetails.isEducacaoAmbiental());
-					parque.setDificuldadeTrilhas(parqueDetails.getDificuldadeTrilhas());
-					parque.setBanheiros(parqueDetails.isBanheiros());
-					parque.setBebedouro(parqueDetails.isBebedouro());
-					parque.setAcessibilidade(parqueDetails.getAcessibilidade());
-					parque.setEstacionamento(parqueDetails.isEstacionamento());
-					parque.setContato(parqueDetails.getContato());
-					parque.setRedesSociais(parqueDetails.getRedesSociais());
-					parque.setReferenciasInformacoes(parqueDetails.getReferenciasInformacoes());
-					parque.setFotos(parqueDetails.getFotos());
+					if (p.getDescricao() != null) {
+						parque.setDescricao(p.getDescricao());
+					}
+					if (p.getNome() != null) {
+						parque.setNome(p.getNome());
+					}
+					if (p.getLocalizacao() != null) {
+						parque.setLocalizacao(p.getLocalizacao());
+					}
+					if (p.getEstadoConservacao() != null) {
+						parque.setEstadoConservacao(p.getEstadoConservacao());
+					}
+					if (p.getTamanhoArea() != null) {
+						parque.setTamanhoArea(p.getTamanhoArea());
+					}
+					if (p.getHorarioVisitacao() != null) {
+						parque.setHorarioVisitacao(p.getHorarioVisitacao());
+					}
+					if (p.getAtrativosTuristicos() != null) {
+						parque.setAtrativosTuristicos(p.getAtrativosTuristicos());
+					}
+					if (p.isEducacaoAmbiental() != parque.isEducacaoAmbiental()) {
+						parque.setEducacaoAmbiental(p.isEducacaoAmbiental());
+					}
+					if (p.getDificuldadeTrilhas() != null) {
+						parque.setDificuldadeTrilhas(p.getDificuldadeTrilhas());
+					}
+					if (p.isBanheiros() != parque.isBanheiros()) {
+						parque.setBanheiros(p.isBanheiros());
+					}
+					if (p.isBebedouro() != parque.isBebedouro()) {
+						parque.setBebedouro(p.isBebedouro());
+					}
+					if (p.getAcessibilidade() != null) {
+						parque.setAcessibilidade(p.getAcessibilidade());
+					}
+					if (p.isEstacionamento() != parque.isEstacionamento()) {
+						parque.setEstacionamento(p.isEstacionamento());
+					}
+					if (p.getContato() != null) {
+						parque.setContato(p.getContato());
+					}
+					if (p.getRedesSociais() != null) {
+						parque.setRedesSociais(p.getRedesSociais());
+					}
+					if (p.getReferenciasInformacoes() != null) {
+						parque.setReferenciasInformacoes(p.getReferenciasInformacoes());
+					}
+					if (p.getFotos() != null) {
+						parque.setFotos(p.getFotos());
+					}
 					return ResponseEntity.ok(parqueRepository.save(parque));
 				})
 				.orElse(ResponseEntity.notFound().build());
 	}
 
-@DeleteMapping("/{id}")
-public ResponseEntity<Void> deleteParque(@PathVariable Long id) {
-    return parqueRepository.findById(id)
-            .map(parque -> {
-                parqueRepository.delete(parque);
-                return ResponseEntity.ok().<Void>build();
-            })
-            .orElseGet(() -> ResponseEntity.notFound().build());
-}
+	@DeleteMapping("/{id}")
+	public ResponseEntity<Void> deleteParque(@PathVariable Long id) {
+		return parqueRepository.findById(id)
+				.map(parque -> {
+					parqueRepository.delete(parque);
+					return ResponseEntity.ok().<Void>build();
+				})
+				.orElseGet(() -> ResponseEntity.notFound().build());
+	}
 }
