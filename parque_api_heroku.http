@@ -4,6 +4,7 @@ Content-Type: application/json
 
 {
         "nome": "Parque Gávea",
+        "descrição": "O Parque Gávea é um parque municipal localizado no bairro Gávea, na cidade de Uberlândia, Minas Gerais. O parque possui uma área de 18,2 hectares e é um dos principais pontos turísticos da cidade. O parque conta com um playground, um planetário, gramados e trilhas para caminhadas. O Parque Gávea é um ótimo lugar para passar o dia com a família e amigos, fazer um piquenique, praticar esportes ou simplesmente relaxar em meio à natureza.",
         "localizacao": {
             "latitude": -18.923901,
             "longitude": -48.276769

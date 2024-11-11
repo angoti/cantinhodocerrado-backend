@@ -1,15 +1,14 @@
 package com.professorangoti.cantinhodocerrado.model;
 
 import java.util.List;
+
+import jakarta.persistence.Column;
 import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.Column;
 import lombok.Data;
 
 @Data
@@ -24,38 +23,47 @@ public class Parque {
 
     @Column(length = 600)
     private String descricao;
-
+    
     @Embedded
     private Coordenadas localizacao;
-
-    @Enumerated(EnumType.STRING)
-    private EstadoConservacao estadoConservacao;
-
+    
+    private String endereco;
+    
+    @Column(length = 600)
+    private String estadoConservacao;
+    
     private Double tamanhoArea;
-
+    
     @Embedded
     private HorarioVisitacao horarioVisitacao;
-
+    
+    @Column(length = 600)
     private String atrativosTuristicos;
-
-    private boolean educacaoAmbiental;
-
-    @Enumerated(EnumType.STRING)
-    private DificuldadeTrilhas dificuldadeTrilhas;
-
+    
+    @Column(length = 600)
+    private String educacaoAmbiental;
+    
+    @Column(length = 600)
+    private String dificuldadeTrilhas;
+    
+    @Column(length = 600)
+    private String descricaoTrilhas;
+    
     private boolean banheiros;
-
+    
     private boolean bebedouro;
-
-    private String acessibilidade;
-
+    
     private boolean estacionamento;
-
+    
+    @Column(length = 600)
+    private String acessibilidade;
+    
     private String contato;
-
+    
     private String redesSociais;
-
-    private String referenciasInformacoes;
+        
+    @Column(length = 600)
+    private String demaisInformacoes;
 
     @ElementCollection
     private List<String> fotos;

@@ -65,8 +65,8 @@ public class ParqueController {
 					if (p.getAtrativosTuristicos() != null) {
 						parque.setAtrativosTuristicos(p.getAtrativosTuristicos());
 					}
-					if (p.isEducacaoAmbiental() != parque.isEducacaoAmbiental()) {
-						parque.setEducacaoAmbiental(p.isEducacaoAmbiental());
+					if (p.getEducacaoAmbiental() != parque.getEducacaoAmbiental()) {
+						parque.setEducacaoAmbiental(p.getEducacaoAmbiental());
 					}
 					if (p.getDificuldadeTrilhas() != null) {
 						parque.setDificuldadeTrilhas(p.getDificuldadeTrilhas());
@@ -89,8 +89,8 @@ public class ParqueController {
 					if (p.getRedesSociais() != null) {
 						parque.setRedesSociais(p.getRedesSociais());
 					}
-					if (p.getReferenciasInformacoes() != null) {
-						parque.setReferenciasInformacoes(p.getReferenciasInformacoes());
+					if (p.getDemaisInformacoes() != null) {
+						parque.setDemaisInformacoes(p.getDemaisInformacoes());
 					}
 					if (p.getFotos() != null) {
 						parque.setFotos(p.getFotos());
