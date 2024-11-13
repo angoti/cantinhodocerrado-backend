@@ -101,6 +101,9 @@ public class ParqueController {
 					if (p.getEndereco() != null) {
 						parque.setEndereco(p.getEndereco());
 					}
+					if (p.getEstrutura() != null) {
+						parque.setEstrutura(p.getEstrutura());
+					}
 					return ResponseEntity.ok(parqueRepository.save(parque));
 				})
 				.orElse(ResponseEntity.notFound().build());

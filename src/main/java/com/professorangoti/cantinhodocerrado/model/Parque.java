@@ -66,4 +66,6 @@ public class Parque {
     private boolean bebedouro;
 
     private boolean estacionamento;
+
+    private String estrutura;
 }

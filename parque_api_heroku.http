@@ -45,7 +45,7 @@ Content-Type: application/json
 }
 
 ### Deletar um parque por ID
-DELETE https://cantinhodocerrado-backend-4a23f7315303.herokuapp.com/parques/10
+DELETE https://cantinhodocerrado-backend-4a23f7315303.herokuapp.com/parques/14
 
 
 
@@ -90,7 +90,7 @@ Content-Type: application/json
          "https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Victório%20Siquierolli%2FIMG_20210823_145059645.jpg?alt=media&token=349218f9-9ba9-407a-a836-c3d2e661e921",
          "https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Vict%C3%B3rio%20Siquierolli%2FIMG_20210823_144856712.jpg?alt=media&token=1f948ba8-2521-4645-98e7-449642e12e76",
          "https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Vict%C3%B3rio%20Siquierolli%2FIMG_20210823_144409314_HDR.jpg?alt=media&token=140ea3d7-a354-4d5a-b062-8454f00ed4c1",
-	       "https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Vict%C3%B3rio%20Siquierolli%2FIMG_20210823_131840862_HDR.jpg?alt=media&token=dd7b0a19-8df7-4c13-a9ac-231a8b5626ad",
+	 "https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Vict%C3%B3rio%20Siquierolli%2FIMG_20210823_131840862_HDR.jpg?alt=media&token=dd7b0a19-8df7-4c13-a9ac-231a8b5626ad",
          "https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Vict%C3%B3rio%20Siquierolli%2FIMG_20210823_131826860_HDR.jpg?alt=media&token=1178d4cc-5cf1-4bfa-a421-d724832675a9"
 ]}
 
@@ -190,37 +190,38 @@ POST https://cantinhodocerrado-backend-4a23f7315303.herokuapp.com/parques
 Content-Type: application/json
 
 {
-"nome": "Parque Estadual do Pau Furado",
-"descricao": "O Parque Estadual do Pau Furado é a primeira Unidade de Conservação de Proteção Integral do Triângulo Mineiro, criado sob o decreto estadual de 27 de janeiro de 2007, como medida de compensação ambiental pela construção das Usinas Hidrelétricas Capim Branco I e II. Seu território abrange os municípios de Uberlândia e Araguari.",
-"localizacao": {
-        "latitude": -18.828363132279105,
-        "longitude": -48.167493274526414
-},
-"estadoConservacao": "O Parque Estadual do Pau Furado é de relevante importância para a conservação da biodiversidade no Triângulo Mineiro, região onde o Cerrado está altamente ameaçado pelas atividades agropecuárias em larga escala, urbanização e incêndios criminosos. O parque contém catalogadas 932 espécies de animais e plantas, sendo algumas delas ameaçadas de extinção, como o lobo-guará (Chrysocyon brachyurus).",
-"tamanhoArea": 2186.85,
-"horarioVisitacao": "Entrada franca. Terça a domingo e feriados (08h às 17h30). Limitada a entrada de visitantes até às 15h.",
-"atrativosTuristicos": "Mirante, Cachoeira do Marimbondo, Cachoeira Terra Branca, Prainha, Curral de Pedras",
-"educacaoAmbiental": true,
-"dificuldadeTrilhas": "Moderada a moderada superior",
-"banheiros": true,
-"bebedouro": true,
-"acessibilidade": "Rampas e corrimãos apenas no acesso à área central do parque",
-"estacionamento": true,
-"contato": "(34) 3232-5622",
-"redesSociais": "https://www.instagram.com/paufurado/",
-"demaisInformacoes": "Conta com atividades de ciclismo e observação da vida silvestre mediante agendamento.",
-"fotos": [
-  "https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG_20240724_142126.jpg?alt=media&token=3b7d3e0e-8a39-4283-aebd-d042f92a0250",
-  "https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG_20240724_120631.jpg?alt=media&token=2edbd124-039c-4cbc-9362-bbee98f4118a",
-  "https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG_20240724_125653.jpg?alt=media&token=2a2ccaaa-105e-4a07-bf23-b808dc983fa9",
-  "https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20240725-WA0082.jpg?alt=media&token=a1f5e4da-0ea2-4284-a610-46f594cd42e0",
-  "https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20240725-WA0072.jpg?alt=media&token=2bcb5e49-d4ab-4fcf-8855-207a0aa6724f",
-  "https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20240725-WA0059.jpg?alt=media&token=3bf24876-b8fc-43a9-b05a-3e15d8f8baa1",
-  "https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20240725-WA0044.jpg?alt=media&token=570ccf7e-09e1-41d4-90c5-b080ae1e2239"
-]}
-
-
-
-
-### Listar horarios
-GET https://cantinhodocerrado-backend-4a23f7315303.herokuapp.com/horarios
+        "nome": "Parque Estadual do Pau Furado",
+        "descricao": "O Parque Estadual do Pau Furado é a primeira Unidade de Conservação de Proteção Integral do Triângulo Mineiro, criado sob o decreto estadual de 27 de janeiro de 2007, como medida de compensação ambiental pela construção das Usinas Hidrelétricas Capim Branco I e II. Seu território abrange os municípios de Uberlândia e Araguari.",
+        "localizacao": {
+                "latitude": -18.828363132279105,
+                "longitude": -48.167493274526414
+        },
+        "estadoConservacao": "O Parque Estadual do Pau Furado é de relevante importância para a conservação da biodiversidade no Triângulo Mineiro, região onde o Cerrado está altamente ameaçado pelas atividades agropecuárias em larga escala, urbanização e incêndios criminosos. O parque contém catalogadas 932 espécies de animais e plantas, sendo algumas delas ameaçadas de extinção, como o lobo-guará (Chrysocyon brachyurus).",
+        "tamanhoArea": 2186.85,
+        "horarioVisitacao": "Entrada franca. Terça a domingo e feriados (08h às 17h30). Limitada a entrada de visitantes até às 15h.",
+        "atrativosTuristicos": "Mirante, Cachoeira do Marimbondo, Cachoeira Terra Branca, Prainha, Curral de Pedras",
+        "educacaoAmbiental": true,
+        "dificuldadeTrilhas": "Moderada a moderada superior",
+        "banheiros": true,
+        "bebedouro": true,
+        "acessibilidade": "Rampas e corrimãos apenas no acesso à área central do parque",
+        "estacionamento": true,
+        "contato": "(34) 3232-5622",
+        "redesSociais": "https://www.instagram.com/paufurado/",
+        "demaisInformacoes": "Conta com atividades de ciclismo e observação da vida silvestre mediante agendamento.",
+        "fotos": [
+                "https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20241113-WA0018.jpg?alt=media&token=d087fe68-0e5e-45c6-9019-ff05fb6a1c2f",
+                "https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20241113-WA0023.jpg?alt=media&token=8ddd5653-65af-48ad-ad70-54d54ea313f4",
+                "https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20241113-WA0022.jpg?alt=media&token=5846d4a8-ce81-44fc-8e65-26487d671438",
+                "https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20241113-WA0021.jpg?alt=media&token=b4a0cbf9-5a17-4688-8174-49af27430c38",
+                "https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20241113-WA0020.jpg?alt=media&token=ca6f7667-747a-4737-a434-806f6f93839c",
+                "https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20241113-WA0019.jpg?alt=media&token=43464943-f4ba-4d00-8cef-c71d17e12a0f",
+                "https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20241113-WA0017.jpg?alt=media&token=679c20df-ca2d-4d22-900c-d54ff0a1d381",
+                "https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20241113-WA0016.jpg?alt=media&token=1f655250-e991-47d2-b59b-5f9333570520",
+                "https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20241113-WA0015.jpg?alt=media&token=ca514361-3d15-464e-9566-d633fa192550",
+                "https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20241113-WA0013.jpg?alt=media&token=4bd59411-9232-462e-8204-04e52e81aedb",
+                "https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20241113-WA0012.jpg?alt=media&token=5a80c5cc-74c0-4007-baa8-f533e1179c3c",
+                "https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20241113-WA0011.jpg?alt=media&token=13d96a0a-47c0-463a-89f5-43075cd661f3",
+                "https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20241113-WA0010.jpg?alt=media&token=090c2f29-053a-4383-8533-403b7141ea39"  
+        ]
+}
