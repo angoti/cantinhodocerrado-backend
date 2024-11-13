@@ -221,3 +221,6 @@ Content-Type: application/json
 
 
 
+
+### Listar horarios
+GET https://cantinhodocerrado-backend-4a23f7315303.herokuapp.com/horarios
