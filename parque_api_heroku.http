@@ -45,7 +45,7 @@ Content-Type: application/json
 }
 
 ### Deletar um parque por ID
-DELETE https://cantinhodocerrado-backend-4a23f7315303.herokuapp.com/parques/12
+DELETE https://cantinhodocerrado-backend-4a23f7315303.herokuapp.com/parques/10
 
 
 
