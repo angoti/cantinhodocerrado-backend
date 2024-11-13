@@ -65,11 +65,14 @@ public class ParqueController {
 					if (p.getAtrativosTuristicos() != null) {
 						parque.setAtrativosTuristicos(p.getAtrativosTuristicos());
 					}
-					if (p.getEducacaoAmbiental() != parque.getEducacaoAmbiental()) {
+					if (p.getEducacaoAmbiental() != null) {
 						parque.setEducacaoAmbiental(p.getEducacaoAmbiental());
 					}
 					if (p.getDificuldadeTrilhas() != null) {
 						parque.setDificuldadeTrilhas(p.getDificuldadeTrilhas());
+					}
+					if (p.getDescricaoTrilhas() != null) {
+						parque.setDescricaoTrilhas(p.getDescricaoTrilhas());
 					}
 					if (p.isBanheiros() != parque.isBanheiros()) {
 						parque.setBanheiros(p.isBanheiros());
@@ -94,6 +97,9 @@ public class ParqueController {
 					}
 					if (p.getFotos() != null) {
 						parque.setFotos(p.getFotos());
+					}
+					if (p.getEndereco() != null) {
+						parque.setEndereco(p.getEndereco());
 					}
 					return ResponseEntity.ok(parqueRepository.save(parque));
 				})

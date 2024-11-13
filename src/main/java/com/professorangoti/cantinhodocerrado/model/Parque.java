@@ -32,8 +32,6 @@ public class Parque {
     @Column(length = 600)
     private String estadoConservacao;
 
-    private Double tamanhoArea;
-
     private String horarioVisitacao;
 
     @Column(length = 600)
@@ -48,12 +46,6 @@ public class Parque {
     @Column(length = 600)
     private String descricaoTrilhas;
 
-    private boolean banheiros;
-
-    private boolean bebedouro;
-
-    private boolean estacionamento;
-
     @Column(length = 600)
     private String acessibilidade;
 
@@ -67,4 +59,11 @@ public class Parque {
     @ElementCollection
     private List<String> fotos;
 
+    private Double tamanhoArea;
+
+    private boolean banheiros;
+
+    private boolean bebedouro;
+
+    private boolean estacionamento;
 }
