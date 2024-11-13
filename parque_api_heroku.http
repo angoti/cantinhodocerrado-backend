@@ -3,36 +3,34 @@ POST https://cantinhodocerrado-backend-4a23f7315303.herokuapp.com/parques
 Content-Type: application/json
 
 {
-        "nome": "Parque Gávea",
-        "descrição": "O Parque Gávea é um parque municipal localizado no bairro Gávea, na cidade de Uberlândia, Minas Gerais. O parque possui uma área de 18,2 hectares e é um dos principais pontos turísticos da cidade. O parque conta com um playground, um planetário, gramados e trilhas para caminhadas. O Parque Gávea é um ótimo lugar para passar o dia com a família e amigos, fazer um piquenique, praticar esportes ou simplesmente relaxar em meio à natureza.",
-        "localizacao": {
-            "latitude": -18.923901,
-            "longitude": -48.276769
-        },
-        "estadoConservacao": "BOM",
-        "tamanhoArea": 18.2,
-        "horarioVisitacao": {
-            "horarioPorDia": {
-                "Terça-feira": "07:00-18:00",
-                "Quarta-feira": "07:00-18:00",
-                "Quinta-feira": "07:00-18:00",
-                "Sexta-feira": "07:00-18:00",
-                "Sábado": "07:00-18:00",
-                "Domingo": "07:00-18:00"
-            }
-        },
-        "atrativosTuristicos": "Playground, planetário, gramados, trilhas",
-        "educacaoAmbiental": null,
-        "dificuldadeTrilhas": "BAIXO",
-        "banheiros": true,
-        "bebedouro": true,
-        "acessibilidade": "Sim",
-        "estacionamento": true,
-        "contato": null,
-        "redesSociais": "@parquegavea",
-        "referenciasInformacoes": "Parque Gávea",
-        "fotos": []
-    }
+"nome": "Parque TESTE",
+"descricao": "É um parque natural municipal que foi criado no dia 07 de novembro de 1997, sob o decreto nº 7452. Situado no bairro Santa Luzia, no Setor Sul de Uberlândia. Sua finalidade é preservar a fauna e a flora, proporcionar lazer público e promover atividades de cunho educacional e científico. Por ser uma Unidade de Conservação de Proteção Integral, é proibida qualquer tipo de exploração dos recursos naturais dentro do seu limite. Inclusive, no seu interior, está localizado o Córrego Lagoinha, que é um dos afluentes urbanos do Rio Uberabinha, o principal rio que abastece a cidade.",
+"localizacao": {
+        "latitude": -18.93939069822312,
+        "longitude": -48.237909769504654
+    },
+"estadoConservacao": "O Parque Santa Luzia apresenta uma rica avifauna, com espécies endêmicas do Cerrado e até ameaçadas de extinção, a exemplo do mutum-de-penacho (Crax fasciolata fasciolata), ponto que reforça a importância fundamental desta Unidade de Conservação na área urbana de Uberlândia. A área do parque é limpa e bem cuidada, com destaque para a jardinagem e paisagismo. O local possui muitas árvores, em meio a espécies nativas e exóticas, assim como plantas ornamentais. Também contém vários pontos para descanso e contemplação da paisagem.",
+"tamanhoArea": 26.83,
+"horarioVisitacao": {"horarioPorDia": {"Terça-feira": "08:00-17:30","Quarta-feira": "08:00-17:30","Quinta-feira": "08:00-17:30","Sexta-feira": "08:00-17:30","Sábado": "08:00-17:30","Domingo": "08:00-17:30","Feriados": "08:00-17:30"}},
+"atrativosTuristicos": "Trilha Ecológica Ferreirinha, Casa da Árvore, Jardim dos Ipês, Labirinto de Hibisco, Sala Verde",
+"educacaoAmbiental": true,
+"dificuldadeTrilhas": "Leve",
+"banheiros": true,
+"bebedouro": true,
+"acessibilidade": "Rampas e corrimãos apenas no acesso à área central do parque",
+"estacionamento": false,
+"contato": "(34) 3225-0076",
+"redesSociais": "https://www.instagram.com/professor.angoti/, https://twitter.com/parquesantaluzia,https://youtube.com/parquesantaluzia",
+"demaisInformacoes": "O território do parque é dividido por duas ruas, o que forma três fragmentos de remanescentes florestais do bioma Cerrado, cuja cobertura vegetal é composta por veredas e uma mata de galeria que margeia o Córrego Lagoinha. Na periferia do fragmento intermediário existe uma lagoa artificial, possível de ser vista por quem transita perto do local. Entretanto, a primeira parte do parque, que também é a maior, é a única aberta para visitação.",
+    
+"fotos": [
+"https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Santa%20Luzia%2FIMG_20210825_155915569_HDR.jpg?alt=media&token=b3410615-8f91-49b3-b4c1-5d42b5066dda",
+"https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Santa%20Luzia%2FIMG_20210825_143221016_HDR.jpg?alt=media&token=fedc270a-b547-4364-bd33-e1d09c49e628",
+"https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Santa%20Luzia%2FIMG_20210825_093640236_HDR.jpg?alt=media&token=659f927d-1d64-4f5e-a44b-488ab0d2d137"
+]}
+
+
+
     
 
 
@@ -43,18 +41,11 @@ GET https://cantinhodocerrado-backend-4a23f7315303.herokuapp.com/parques
 GET https://cantinhodocerrado-backend-4a23f7315303.herokuapp.com/parques/1
 
 ### Atualizar um parque existente
-PUT https://cantinhodocerrado-backend-4a23f7315303.herokuapp.com/parques/1
+PUT https://cantinhodocerrado-backend-4a23f7315303.herokuapp.com/parques/10
 Content-Type: application/json
 
 {
-    "nome": "Parque do Sabiá",
-    "localizacao": {
-        "latitude": -18.918202,
-        "longitude": -48.275520
-    },
-    "estadoConservacao": "BOM",
-    "tamanhoArea": 150.5,
-    "horarioVisitacao": {
+  "horarioVisitacao": {
         "horarioPorDia": {
             "Segunda-feira": "07:00-19:00",
             "Terça-feira": "07:00-19:00",
@@ -65,26 +56,7 @@ Content-Type: application/json
             "Domingo": "07:00-19:00"
         }
     },
-    "atrativosTuristicos": "Lago, trilhas, área de lazer e playground",
-    "educacaoAmbiental": true,
-    "dificuldadeTrilhas": "DIFICIL",
-    "banheiros": true,
-    "bebedouro": true,
-    "acessibilidade": "Completa",
-    "estacionamento": true,
-    "contato": "(34) 8765-4321",
-    "redesSociais": "@parquedosabia",
-    "referenciasInformacoes": "Informações atualizadas da Prefeitura",
-    "fotos": [
-"https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG_20240724_142126.jpg?alt=media&token=3b7d3e0e-8a39-4283-aebd-d042f92a0250",
-"https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG_20240724_120631.jpg?alt=media&token=2edbd124-039c-4cbc-9362-bbee98f4118a",
-"https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20240725-WA0082.jpg?alt=media&token=a1f5e4da-0ea2-4284-a610-46f594cd42e0",
-"https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20240725-WA0072.jpg?alt=media&token=2bcb5e49-d4ab-4fcf-8855-207a0aa6724f",
-"https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20240725-WA0059.jpg?alt=media&token=3bf24876-b8fc-43a9-b05a-3e15d8f8baa1",
-"https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG-20240725-WA0044.jpg?alt=media&token=570ccf7e-09e1-41d4-90c5-b080ae1e2239",
-"https://firebasestorage.googleapis.com/v0/b/cantinho-do-cerrado.appspot.com/o/Pau%20Furado%2FIMG_20240724_125653.jpg?alt=media&token=2a2ccaaa-105e-4a07-bf23-b808dc983fa9"
-   ]
 }
 
 ### Deletar um parque por ID
-DELETE https://cantinhodocerrado-backend-4a23f7315303.herokuapp.com/parques/2
+DELETE https://cantinhodocerrado-backend-4a23f7315303.herokuapp.com/parques/18

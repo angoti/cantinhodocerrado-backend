@@ -23,45 +23,44 @@ public class Parque {
 
     @Column(length = 600)
     private String descricao;
-    
+
     @Embedded
     private Coordenadas localizacao;
-    
+
     private String endereco;
-    
+
     @Column(length = 600)
     private String estadoConservacao;
-    
+
     private Double tamanhoArea;
-    
-    @Embedded
-    private HorarioVisitacao horarioVisitacao;
-    
+
+    private String horarioVisitacao;
+
     @Column(length = 600)
     private String atrativosTuristicos;
-    
+
     @Column(length = 600)
     private String educacaoAmbiental;
-    
+
     @Column(length = 600)
     private String dificuldadeTrilhas;
-    
+
     @Column(length = 600)
     private String descricaoTrilhas;
-    
+
     private boolean banheiros;
-    
+
     private boolean bebedouro;
-    
+
     private boolean estacionamento;
-    
+
     @Column(length = 600)
     private String acessibilidade;
-    
+
     private String contato;
-    
+
     private String redesSociais;
-        
+
     @Column(length = 600)
     private String demaisInformacoes;
 
